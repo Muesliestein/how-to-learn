@@ -7,6 +7,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
 .header {
   color: #000000;
   height: 100vh;
@@ -19,16 +20,19 @@
   /* выше установили ограничения для секции */
   /*Сделать так, чтобы дочерние элементы не выходили за блок родителя*/
 }
+
 .logo {
   width: 228px;
   height: 32px;
 }
+
 .logo_place_header {
   z-index: 1;
   position: absolute;
   top: 30px;
   left: 64px;
- }
+}
+
 .header__title {
   z-index: 1;
   width: 730px;
@@ -38,6 +42,7 @@
   left: 64px;
   position: absolute;
 }
+
 .header__subtitle {
   z-index: 1;
   width: 388px;
@@ -48,11 +53,13 @@
   bottom: 30px;
   left: 64px;
 }
+
 .header__link {
   z-index: 1;
   font-size: 18px;
   font-weight: normal;
 }
+
 .header__main-illustration {
   z-index: 0;
   background-size: contain;
@@ -60,9 +67,9 @@
   height: 608px;
   position: absolute;
   bottom: 0;
-  right:  0;
+  right: 0;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
   background-color: #2f80ed;
   position: absolute;
@@ -72,14 +79,16 @@
   right: 0;
   top: 64px;
 }
+
 .description {
   padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  
+
 }
+
 .description__two-columns {
   width: 80%;
   display: flex;
@@ -88,34 +97,39 @@
   margin: 0;
   padding: 0;
 }
+
 .description__two-columns_brief {
   width: 175px;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
   margin: 0;
   padding: 0;
 }
+
 .description__two-columns_main-text {
   min-width: 784px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  
+
 }
+
 .description__two-columns_main-text_paragraph {
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   margin: 0;
 }
+
 .accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
+
 .digits {
   padding: 100px 0;
   color: #1f1f1f;
@@ -123,37 +137,42 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  
+
 }
+
 .digits__title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
   width: 60%;
-  margin:0;
+  margin: 0;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .digits__subtitle {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   width: 60%;
   margin: 0;
-  text-align:center;
+  text-align: center;
 }
+
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 20px;
 }
+
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
 }
+
 .table__text_bank {
   line-height: 1.2;
   font-size: 18px;
@@ -161,6 +180,7 @@
   margin: 0;
   margin-top: 20px;
 }
+
 .table {
   margin: 0;
   padding: 0;
@@ -172,36 +192,41 @@
   padding-top: 60px;
   gap: 60px 0;
 }
+
 .table__cell {
   width: 250px;
   padding: 0;
   margin: 0;
 }
+
 .feynman {
   padding: 0;
   margin: 0;
   min-height: 900px;
   display: flex;
   position: relative;
-  flex-direction: column; 
+  flex-direction: column;
 }
+
 .feynman__background {
-  z-index:  -1;
+  z-index: -1;
   width: 867px;
   height: 637px;
-  position:absolute;
+  position: absolute;
   left: 0;
   bottom: 0;
 }
+
 .feynman__title {
   margin: 0 auto 0;
-  padding:0;
+  padding: 0;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
   text-align: center;
 }
+
 .feynman__subtitle {
   margin: auto;
   padding: 0;
@@ -211,8 +236,9 @@
   font-weight: normal;
   margin-top: 70px;
 }
+
 .feynman__link {
-  color:#2f80ed;
+  color: #2f80ed;
   text-decoration: none;
   line-height: 51px;
   font-size: 36px;
@@ -221,6 +247,7 @@
   top: 50%;
   right: 48px;
 }
+
 .kaufman {
   background-color: #1f1f1f;
   padding-top: 90px;
@@ -232,6 +259,7 @@
   overflow: hidden;
   flex-wrap: wrap;
 }
+
 .kaufman__triangle {
   z-index: 0;
   height: 877px;
@@ -240,6 +268,7 @@
   right: -210px;
   top: 0;
 }
+
 .kaufman__title_theme_dark {
   z-index: 1;
   color: white;
@@ -247,10 +276,11 @@
   font-size: 60px;
   font-weight: 600;
   width: 60%;
-  margin:0;
+  margin: 0;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .kaufman__subtitle_theme_dark {
   z-index: 1;
   color: white;
@@ -259,16 +289,18 @@
   font-weight: normal;
   width: 60%;
   margin: 0;
-  text-align:center;
+  text-align: center;
 }
+
 .table__heading_theme_dark {
   z-index: 1;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 20px;
-  padding:0;
+  padding: 0;
 }
+
 .table__text_theme_dark {
   z-index: 1;
   line-height: 1.2;
@@ -278,6 +310,7 @@
   padding: 0;
 
 }
+
 .table_theme_dark {
   z-index: 1;
   margin: 0;
@@ -290,6 +323,7 @@
   padding-top: 80px;
   gap: 80px 0;
 }
+
 .table__cell_theme_dark {
   z-index: 1;
   width: 200px;
@@ -298,6 +332,7 @@
   padding: 0;
   margin: 0;
 }
+
 .footer {
   color: white;
   margin: 0;
@@ -308,12 +343,14 @@
   display: flex;
   justify-content: center;
 }
+
 .columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .column__content_copyright {
   flex-basis: 711px;
   padding: 0;
@@ -322,19 +359,23 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .column__content_info {
   padding: 0;
   margin: 0;
 }
+
 .column__content_social {
   padding: 0;
   margin: 0;
 }
+
 .logo__place_footer {
   z-index: 1;
   width: 228px;
   height: 32px;
 }
+
 .author {
   max-width: 185px;
   margin-top: 18px;
@@ -349,14 +390,16 @@
   flex-direction: column;
   margin-bottom: 16px;
 }
+
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: white;
-  
+
 }
+
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
@@ -365,6 +408,7 @@
   padding: 0;
 
 }
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
