@@ -9,14 +9,16 @@
 }
 
 .header {
+  z-index: -1;
   color: #000000;
+  background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* выше установили ограничения для секции */
   /*Сделать так, чтобы дочерние элементы не выходили за блок родителя*/
 }
@@ -39,8 +41,8 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  left: 64px;
-  position: absolute;
+  margin-left: 64px;
+  padding: 0;
 }
 
 .header__subtitle {
@@ -81,6 +83,8 @@
 }
 
 .description {
+  z-index: -1;
+  background-color: white;
   padding-top: 100px;
   display: flex;
   align-items: center;
@@ -89,7 +93,7 @@
 
 }
 
-.description__two-columns {
+.two-columns {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -98,7 +102,7 @@
   padding: 0;
 }
 
-.description__two-columns_brief {
+.two-columns__brief {
   width: 175px;
   font-size: 18px;
   line-height: 1.2;
@@ -108,7 +112,7 @@
   padding: 0;
 }
 
-.description__two-columns_main-text {
+.two-columns__main-text {
   min-width: 784px;
   width: 80%;
   display: flex;
@@ -117,21 +121,23 @@
 
 }
 
-.description__two-columns_main-text_paragraph {
+.two-columns__paragraph {
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   margin: 0;
 }
 
-.accent {
+.two-columns__span-accentaccent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
 
 .digits {
+  z-index: -1;
   padding: 100px 0;
+  background-color: white;
   color: #1f1f1f;
   display: flex;
   align-items: center;
@@ -140,7 +146,7 @@
 
 }
 
-.digits__title {
+.section-title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -150,7 +156,7 @@
   text-align: center;
 }
 
-.digits__subtitle {
+.section-subtitle {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -200,6 +206,8 @@
 }
 
 .feynman {
+  z-index: -1;
+  background-color: #f2f2f2;
   padding: 0;
   margin: 0;
   min-height: 900px;
@@ -269,7 +277,7 @@
   top: 0;
 }
 
-.kaufman__title_theme_dark {
+.section-title_theme_dark {
   z-index: 1;
   color: white;
   line-height: 1.15;
@@ -281,7 +289,7 @@
   text-align: center;
 }
 
-.kaufman__subtitle_theme_dark {
+.section-subtitle_theme_dark {
   z-index: 1;
   color: white;
   line-height: 34px;
@@ -344,14 +352,14 @@
   justify-content: center;
 }
 
-.columns {
+.footer__columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.column__content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   padding: 0;
   margin: 0;
@@ -360,7 +368,7 @@
   justify-content: space-between;
 }
 
-.column__content_info {
+.footer__column_content_info {
   padding: 0;
   margin: 0;
 }
@@ -372,11 +380,9 @@
 
 .logo__place_footer {
   z-index: 1;
-  width: 228px;
-  height: 32px;
 }
 
-.author {
+.footer__author {
   max-width: 185px;
   margin-top: 18px;
   margin-bottom: 18px;
