@@ -1,7 +1,8 @@
 .resources__link {
+    transition: opacity 0.2s;
+    text-align: center;
     width: 270px;
     height: 38px;
-    transition: opacity 0.2s;
 }
 
 .resources__link:hover {
